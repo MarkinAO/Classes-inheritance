@@ -12,16 +12,8 @@ export default class Character {
     }
     this.health = 100;
     this.level = 1;
-    if (type === 'Bowman' || type === 'Undead') {
-      this.attack = 25;
-      this.defence = 25;
-    } else if (type === 'Swordsman' || type === 'Zombie') {
-      this.attack = 40;
-      this.defence = 10;
-    } else if (type === 'Magician' || type === 'Daemon') {
-      this.attack = 10;
-      this.defence = 40;
-    }
+    this.attack = null;
+    this.defence = null;
   }
 
   levelUp() {
